@@ -1,5 +1,6 @@
 "use client";
 
+import { signOutAction } from "@/actions/auth.action";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -8,7 +9,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { LogOut } from "lucide-react";
 import type { PropsWithChildren } from "react";
-import { signOutAction } from "../actions/auth.action";
 
 export type UserDropdownProps = PropsWithChildren<{}>;
 

@@ -1,5 +1,5 @@
-import { getUserByEmailAction } from "@/features/actions/auth.action";
-import { LoginSchema } from "@/features/schemas/auth.schema";
+import { getUserByEmailAction } from "@/actions/auth.action";
+import { LoginSchema } from "@/schemas/auth.schema";
 import bcrypt from "bcryptjs";
 import type { NextAuthConfig } from "next-auth";
 import { CredentialsSignin } from "next-auth";

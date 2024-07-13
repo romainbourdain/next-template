@@ -1,5 +1,6 @@
 "use client";
 
+import { signInWithEmailAndPasswordAction } from "@/actions/auth.action";
 import {
   Form,
   FormControl,
@@ -10,12 +11,11 @@ import {
   useZodForm,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { signInWithEmailAndPasswordAction } from "@/features/actions/auth.action";
 import { FormError } from "@/features/form/form-error";
 import { FormSubmit } from "@/features/form/form-submit";
 import { FormSuccess } from "@/features/form/form-success";
-import type { LoginData } from "@/features/schemas/auth.schema";
-import { LoginSchema } from "@/features/schemas/auth.schema";
+import type { LoginData } from "@/schemas/auth.schema";
+import { LoginSchema } from "@/schemas/auth.schema";
 import { useState } from "react";
 import { CardWrapper } from "./card-wrapper";
 

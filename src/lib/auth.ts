@@ -1,4 +1,4 @@
-import { getUserByIdAction } from "@/features/actions/auth.action";
+import { getUserByIdAction } from "@/actions/auth.action";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import { PrismaClient } from "@prisma/client";
 import NextAuth from "next-auth";

@@ -1,5 +1,6 @@
 "use client";
 
+import { registerAction } from "@/actions/auth.action";
 import {
   Form,
   FormControl,
@@ -10,12 +11,11 @@ import {
   useZodForm,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { registerAction } from "@/features/actions/auth.action";
 import { FormError } from "@/features/form/form-error";
 import { FormSubmit } from "@/features/form/form-submit";
 import { FormSuccess } from "@/features/form/form-success";
-import type { RegisterData } from "@/features/schemas/auth.schema";
-import { RegisterSchema } from "@/features/schemas/auth.schema";
+import type { RegisterData } from "@/schemas/auth.schema";
+import { RegisterSchema } from "@/schemas/auth.schema";
 import { useState } from "react";
 import { CardWrapper } from "./card-wrapper";
 
