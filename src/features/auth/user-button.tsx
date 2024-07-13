@@ -12,7 +12,7 @@ export const UserButton = async () => {
 
   return (
     <UserDropdown>
-      <Avatar className="size-10">
+      <Avatar className="size-10 cursor-pointer">
         <AvatarImage
           src={session.user.image || ""}
           alt={session.user.name || "user profile picture"}

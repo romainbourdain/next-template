@@ -1,6 +1,6 @@
 "use client";
 
-import { Layout } from "@/components/tailwind/layout";
+import { PageLayout } from "@/components/tailwind/page-layout";
 import { buttonVariants } from "@/components/ui/button";
 import { Typography } from "@/components/ui/typography";
 import { cn } from "@/lib/utils";
@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function RouteError({ error, reset }: ErrorParams) {
   return (
-    <Layout className="flex h-screen flex-col items-center justify-center gap-3">
+    <PageLayout className="flex h-screen flex-col items-center justify-center gap-3">
       <Typography variant="code">404</Typography>
       <Typography variant="h1">Page not found</Typography>
       <Typography variant="base">
@@ -18,6 +18,6 @@ export default function RouteError({ error, reset }: ErrorParams) {
       <Link href="/" className={cn(buttonVariants(), "mt-5")}>
         Go back home
       </Link>
-    </Layout>
+    </PageLayout>
   );
 }

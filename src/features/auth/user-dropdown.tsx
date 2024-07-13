@@ -17,7 +17,7 @@ export const UserDropdown = ({ children }: UserDropdownProps) => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>{children}</DropdownMenuTrigger>
       <DropdownMenuContent>
-        <DropdownMenuItem onClick={() => signOutAction()}>
+        <DropdownMenuItem onClick={() => signOutAction(null)}>
           <LogOut size={16} className="mr-2" />
           Se déconnecter
         </DropdownMenuItem>
